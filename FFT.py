@@ -44,3 +44,4 @@ if __name__ == '__main__':
     wave = np.cos(M)
     T = 1
     fft3(M,T)
+    print('hello')

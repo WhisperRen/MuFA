@@ -101,7 +101,8 @@ f_cutoff_dispersion, klim = float(f_cutoff_dispersion),float(klim)
 f_cutoff_colormap = float(f_cutoff_colormap)
 T_resample,X_resample = int(time_resample),int(space_resample)
 
-def fileload(name,colum):
+
+def fileload(name, colum):
     colum = int(colum)
     file = np.loadtxt(name, dtype = float,
                       comments = '#', usecols = (colum,))
@@ -136,6 +137,7 @@ def multicore(dirc,startstage,endstage,
         pool.close()
         pool.join()
     return matrices
+
 
 if __name__ == '__main__':
         
